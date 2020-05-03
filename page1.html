@@ -1,0 +1,185 @@
+<?php
+include("connection.php");
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body class="page1" onload="f1()">
+  <div class="p1-navbar">
+    <div class="logo-div">
+      <img src="images/Logo.png" alt="mit-logo">
+    </div>
+    <div class="heading-div">
+      <h1>MIT School of management</h1>
+    </div>
+    <div class="side-div">
+      <h3 id="showtime"></h3>
+    </div>
+  </div>
+  <!--p1-navbar ends-->
+
+
+
+  <div class="body-container"></div>
+  <div class="qs-container">
+    <?php
+      $question = () 
+    ?>
+    <div class="q1">
+      <p>1. What do you wish your college instructors knew about you?</p>
+        <div class="outer" id="outer" onmousemove="fillBar('inner')"><div class="inner" id="inner" style=" background-color: rgb(255,0,0);" ></div></div>
+        <div id="score" style="margin-left: 318px;">0</div>
+    </div>
+    <div class="q2">  
+      <p>2. What do you wish your college instructors knew about you?</p>
+      <div class="outer" id="outer" onmousemove="fillBar('inner')"><div class="inner" id="inner" style=" background-color: rgb(255,0,0);" ></div></div>
+      <div id="score" style="margin-left: 318px;">0</div>
+    </div>
+    <div class="q3">
+      <p>3. What do you wish your college instructors knew about you?</p>
+      <div class="outer" id="outer" onmousemove="fillBar('inner')"><div class="inner" id="inner" style=" background-color: rgb(255,0,0);" ></div></div>
+      <div id="score" style="margin-left: 318px;">0</div>
+    </div>
+    <div class="q4">
+      <p>4. What do you wish your college instructors knew about you?</p>
+      <div class="outer" id="outer" onmousemove="fillBar('inner')"><div class="inner" id="inner" style=" background-color: rgb(255,0,0);" ></div></div>
+      <div id="score" style="margin-left: 318px;">0</div>
+    </div>
+    <div class="q5">
+      <p>5. What do you wish your college instructors knew about you?</p>
+      <div class="outer" id="outer" onmousemove="fillBar('inner')"><div class="inner" id="inner" style=" background-color: rgb(255,0,0);" ></div></div>
+      <div id="score" style="margin-left: 318px;">0</div>
+    </div>
+  </div>
+  <div class="detail-container"> </div>
+  <div class="d1">
+    <div class="space">
+
+      <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Ashish Kulkarni</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Ashish Kulkarni</a>
+        <a href="#">Dinesh Banswal</a>
+        <a href="#">Kartik Arian</a>
+        <a href="#">Sarita B</a>
+      </div>
+    </div>
+   
+
+    <div class="head-d1">
+      <p>Course</p>
+      <p>Batch</p>
+      <p>Timester</p>
+    </div>
+    <div class="body-d1">
+      <p>MCA (Management)</p>
+      <p>2018-21</p>
+      <p>Vth</p>
+    </div>
+
+    <div class="button"> Submit </div>
+  </div>
+
+  </div>
+  </div>
+
+
+  <div class="vl"></div>
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" onclick="redirect()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Your Feedback Time is Over .</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal" onclick="redirect()">Submit</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+</body>
+<script>
+  var prevwidth=0;
+  function fillBar(id){
+      var x = event.pageX - $('#outer').offset().left;
+      // alert(x);
+      var change;
+      var color= document.getElementById("inner").style.backgroundColor;
+      var match = color.match(/rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/);
+      document.getElementById("inner").style.backgroundColor = "lightblue"
+      //alert(match[2]);
+      width = (x/600)*100;
+     /* if(width>prevwidth){
+          match[2]++;
+          match[1]--;
+          document.getElementById("inner").style.backgroundColor="rgb("+match[1]+","+match[2]+",0)";
+      } 
+      else{
+          match[1]++;
+          match[2]--;
+          document.getElementById("inner").style.backgroundColor="rgb("+match[1]+","+match[2]+",0)";
+      }   
+    */
+      document.getElementById("inner").style.width = Math.floor(width)+"%";
+      document.getElementById("score").innerHTML=Math.floor(width);
+      width=prevwidth;
+  }
+  var tim;
+       
+        var min = 0;
+        var sec = 5;
+        var f = new Date();
+        function f1() {
+            f2();
+            document.getElementById("starttime").innerHTML = "Your started your Exam at " + f.getHours() + ":" + f.getMinutes();
+        }
+        function f2() {
+            if (parseInt(sec) > 0) {
+                sec = parseInt(sec) - 1;
+                document.getElementById("showtime").innerHTML = "Time Left "+min+":" + sec+"";
+                tim = setTimeout("f2()", 1000);
+            }
+            else {
+                if (parseInt(sec) == 0) {
+                    min = parseInt(min) - 1;
+                    if (parseInt(min) == 0) {
+                        clearTimeout(tim);
+                        location.href = "page1.html";
+                    }
+                    else {
+                      $('#myModal').modal('show');
+                    }
+                }
+               
+            }
+        }
+        function redirect(){
+          location.href = "student_login.php";
+        }
+       
+</script>
+</html>

@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #e96443, #904e95);
+  font-family: 'Ubuntu', serif;
+  overflow: hidden;
+}
+.active{
+  color: #e96443 ; 
+}
+.navbar {
+  background-color: white;
+  height: 570px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo img {
+  margin-left: 510px;
+  padding-left: 10px;
+  padding-top: 30px;
+  width: 300px;
+}
+
+.logo h2 {
+  margin-left: 560px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.sign-form {
+  width: 500px;
+  height: 400px;
+  background: #fbfbfb;
+  border-radius: 10px;
+  margin-left: 420px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login100-form {
+  padding: 35px;
+}
+
+/*Page 1*/
+.page1 {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.p1-navbar {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  box-shadow: 20px 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo-div {
+  width: 30%;
+  height: 80px;
+  background-color: ;
+  float: left;
+}
+
+.logo-div img {
+  width: 200px;
+  margin: 10px 0 0 10px;
+}
+
+.heading-div {
+  width: 40%;
+  height: 80px;
+  margin-left: 20px;
+  background-color: ;
+  float: left;
+  text-align: center;
+}
+
+.heading-div h1 {
+  margin: 25px 0 0 10px;
+  font-family: 'Ubuntu', serif;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.side-div {
+  width: 20%;
+  height: 50px;
+  margin: 15px 0 0 0;
+  margin-left: 40px;
+  padding: 10px 0 0 10px;
+  background-color: ;
+  text-align: right;
+  float: left;
+}
+
+.side-div h1 {
+  font-family: 'Ubuntu', serif;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+/*Vertical line*/
+.vl {
+  border-left: 1px solid #000;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 85%;
+  opacity: 20%;
+  margin-top: 25px;
+  margin-left: 70%;
+  position: absolute;
+}
+
+/*body container*/
+.body-container {
+  font-family: 'Ubuntu', serif;
+  background-color: #fbfbfb;
+  opacity: 80%;
+  width: 70%;
+  height: calc(100vh - 80px);
+  position: absolute;
+  overflow-y: auto;
+}
+
+.qs-container {
+  margin-top: 10px;
+  opacity: 80%;
+  width: 69%;
+  height: calc(100vh - 90px);   
+  float: left;
+  position: fixed;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.q1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.qs-container p {
+  font-family: 'Ubuntu', serif;
+  font-size: 21px;
+  margin: 30px;
+  color: black;
+}
+
+.q2 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.q3 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.q4 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.q5 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.detail-container {
+  background-color: #fff;
+  font-size: 19px;
+  width: 30%;
+  height: 870px;
+  margin-left: 70%;
+  opacity: 80%;
+  float: left;
+}
+
+.d1 {
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+  width: 360px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 72%;
+  float: left;
+  position: fixed;
+}
+
+.d1-heading {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  background-color: ;
+  text-align: center;
+}
+
+.head-d1 {
+  text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    width: 80px;
+    height: 200px;
+    float: left;
+    margin-top: 50px;
+    margin-left: -10px;
+    padding-left: 70px;
+}
+
+.body-d1 {
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+  width: 180px;
+  height: 219px;
+  float: left;
+  margin-top: 49px;
+  margin-left: 54px;
+  padding-left: 50px;
+}
+
+.space {
+  width: 350px;
+  height: 150px;
+  background-color: ;
+  float: left;
+  margin-top: 30px;
+  padding-left: 30%;
+}
+
+/*Avatar design*/
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*Button*/
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  width: 80px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 50px 190px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fbfbfb;
+  border: 1px solid #333333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  color: black;
+  width: 250px;
+  padding: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #fff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  padding-left: 50px;
+  background-color: ;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/*Scroll bar design*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, #e96443, #904e95);
+}
+.outer{
+  position: relative;
+  margin-left: 31px;
+  width : 601px;
+  height : 50px;
+  border : 5px solid violet ;
+  margin-top: -17px;
+  border-radius: 25px;
+}
+.inner{
+  position : relative;
+  background-color: lightblue;
+  width : 0%;
+  height : 40px;
+  border-radius: 25px;
+}
